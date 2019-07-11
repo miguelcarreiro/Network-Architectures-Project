@@ -1,0 +1,38 @@
+Dec 11 14:04:11.889 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 11 14:04:11.890 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59767.
+Dec 11 14:04:11.922 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 14:04:11.923 HYPERVISOR: exec_cmd: hypervisor working_dir /home/miguel/Documents/AR/Projeto/Projeto-P1/project-files/dynamips 
+Dec 11 14:04:11.923 GENERAL: working_dir=/home/miguel/Documents/AR/Projeto/Projeto-P1/project-files/dynamips
+Dec 11 14:04:11.924 HYPERVISOR: exec_cmd: vm create PC4 14 c3725 
+Dec 11 14:04:11.924 VM: VM PC4 created.
+Dec 11 14:04:11.929 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC4 5013 
+Dec 11 14:04:11.932 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC4 
+Dec 11 14:04:11.933 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC4 c20e.3a5c.0000 
+Dec 11 14:04:11.933 HYPERVISOR: exec_cmd: vm set_nvram PC4 256 
+Dec 11 14:04:11.936 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 11 14:04:11.937 HYPERVISOR: exec_cmd: vm set_idle_pc PC4 0x60a68e70 
+Dec 11 14:04:11.938 HYPERVISOR: exec_cmd: vm set_disk0 PC4 0 
+Dec 11 14:04:11.938 HYPERVISOR: exec_cmd: vm set_ios PC4 /home/miguel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 11 14:04:11.939 HYPERVISOR: exec_cmd: vm set_config PC4 configs/i14_startup-config.cfg 
+Dec 11 14:04:11.939 HYPERVISOR: exec_cmd: vm set_config PC4 configs/i14_startup-config.cfg configs/i14_private-config.cfg 
+Dec 11 14:04:12.940 HYPERVISOR: exec_cmd: nio create_udp udp-51363a81-3206-477c-9c63-c7f11390336a 10043 127.0.0.1 10042 
+Dec 11 14:04:12.941 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC4 0 0 udp-51363a81-3206-477c-9c63-c7f11390336a 
+Dec 11 14:04:12.942 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 11 14:07:45.320 HYPERVISOR: exec_cmd: vm set_ghost_status PC4 2 
+Dec 11 14:07:45.324 HYPERVISOR: exec_cmd: vm set_ghost_file PC4 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 11 14:07:45.425 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 11 14:07:45.426 HYPERVISOR: exec_cmd: vm start PC4 
+Dec 11 14:13:23.519 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Dec 11 14:13:24.251 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 11 14:13:24.255 HYPERVISOR: exec_cmd: vm stop PC4 
+Dec 11 14:13:24.287 VM: VM PC4 shutdown.
+Dec 11 14:13:24.289 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Dec 11 14:13:27.051 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Dec 11 14:13:27.690 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Dec 11 14:13:38.686 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 11 14:13:38.697 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Dec 11 14:13:38.709 HYPERVISOR: exec_cmd: vm delete PC4 
+Dec 11 14:13:38.709 VM: VM PC4 destroyed.
+Dec 11 14:13:38.715 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 14:13:38.813 HYPERVISOR: Stopped.
+Dec 11 14:13:38.813 GENERAL: reset done.

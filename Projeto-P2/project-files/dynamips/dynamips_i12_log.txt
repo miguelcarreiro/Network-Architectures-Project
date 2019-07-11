@@ -1,0 +1,53 @@
+Dec 07 09:54:27.014 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 07 09:54:27.014 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48171.
+Dec 07 09:54:27.087 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 09:54:27.088 HYPERVISOR: exec_cmd: hypervisor working_dir /home/miguel/Documents/AR/Projeto/Projeto-P2/project-files/dynamips 
+Dec 07 09:54:27.088 GENERAL: working_dir=/home/miguel/Documents/AR/Projeto/Projeto-P2/project-files/dynamips
+Dec 07 09:54:27.088 HYPERVISOR: exec_cmd: vm create SW10 12 c3725 
+Dec 07 09:54:27.088 VM: VM SW10 created.
+Dec 07 09:54:27.089 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW10 5016 
+Dec 07 09:54:27.090 HYPERVISOR: exec_cmd: c3725 get_mac_addr SW10 
+Dec 07 09:54:27.095 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 09:54:27.097 HYPERVISOR: exec_cmd: vm set_idle_pc SW10 0x60a68e70 
+Dec 07 09:54:27.098 HYPERVISOR: exec_cmd: c3725 set_mac_addr SW10 c20c.2896.0000 
+Dec 07 09:54:27.098 HYPERVISOR: exec_cmd: vm set_nvram SW10 256 
+Dec 07 09:54:27.098 HYPERVISOR: exec_cmd: vm set_disk0 SW10 1 
+Dec 07 09:54:27.099 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 09:54:27.099 HYPERVISOR: exec_cmd: vm slot_add_binding SW10 1 0 NM-16ESW 
+Dec 07 09:54:27.100 HYPERVISOR: exec_cmd: vm set_ios SW10 /home/miguel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 09:54:27.101 HYPERVISOR: exec_cmd: vm set_config SW10 configs/i12_startup-config.cfg 
+Dec 07 09:54:27.896 HYPERVISOR: exec_cmd: nio create_udp udp-f41d6d8d-e84b-49ad-9778-30689c3e1611 10038 127.0.0.1 10039 
+Dec 07 09:54:27.897 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW10 1 0 udp-f41d6d8d-e84b-49ad-9778-30689c3e1611 
+Dec 07 09:54:27.897 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 09:54:27.916 HYPERVISOR: exec_cmd: nio create_udp udp-d35fd63e-380e-4e65-a9a2-4a46f2c7ea79 10040 127.0.0.1 10041 
+Dec 07 09:54:27.917 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW10 1 5 udp-d35fd63e-380e-4e65-a9a2-4a46f2c7ea79 
+Dec 07 09:54:27.918 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 09:54:27.944 HYPERVISOR: exec_cmd: nio create_udp udp-41b00e29-04ab-4bbf-a26b-e5521489f05a 10043 127.0.0.1 10042 
+Dec 07 09:54:27.945 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW10 1 1 udp-41b00e29-04ab-4bbf-a26b-e5521489f05a 
+Dec 07 09:54:27.945 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 09:55:03.222 HYPERVISOR: exec_cmd: vm set_ghost_status SW10 2 
+Dec 07 09:55:03.223 HYPERVISOR: exec_cmd: vm set_ghost_file SW10 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 07 09:55:03.231 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 09:55:03.234 HYPERVISOR: exec_cmd: vm start SW10 
+Dec 07 09:58:59.418 HYPERVISOR: exec_cmd: vm extract_config SW10 
+Dec 07 09:58:59.696 HYPERVISOR: exec_cmd: vm extract_config SW10 
+Dec 07 10:01:34.683 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 10:01:34.683 HYPERVISOR: exec_cmd: vm stop SW10 
+Dec 07 10:01:34.794 VM: VM SW10 shutdown.
+Dec 07 10:01:34.795 HYPERVISOR: exec_cmd: vm extract_config SW10 
+Dec 07 10:01:37.067 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 10:01:37.067 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SW10 1 1 
+Dec 07 10:01:37.068 HYPERVISOR: exec_cmd: nio delete udp-41b00e29-04ab-4bbf-a26b-e5521489f05a 
+Dec 07 10:01:38.763 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 10:01:38.764 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SW10 1 0 
+Dec 07 10:01:38.765 HYPERVISOR: exec_cmd: nio delete udp-f41d6d8d-e84b-49ad-9778-30689c3e1611 
+Dec 07 10:01:38.766 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 10:01:38.766 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SW10 1 5 
+Dec 07 10:01:38.767 HYPERVISOR: exec_cmd: nio delete udp-d35fd63e-380e-4e65-a9a2-4a46f2c7ea79 
+Dec 07 10:01:38.768 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 07 10:01:38.768 HYPERVISOR: exec_cmd: vm extract_config SW10 
+Dec 07 10:01:38.769 HYPERVISOR: exec_cmd: vm delete SW10 
+Dec 07 10:01:38.769 VM: VM SW10 destroyed.
+Dec 07 10:01:38.770 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 10:01:38.930 HYPERVISOR: Stopped.
+Dec 07 10:01:38.930 GENERAL: reset done.
